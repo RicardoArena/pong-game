@@ -58,7 +58,7 @@ class Pong {
     this._canvas = canvas;
     this._context = canvas.getContext("2d");
 
-    this.initialSpeed = 250;
+    this.initialSpeed = 300;
 
     this.ball = new Ball();
 
@@ -96,7 +96,7 @@ class Pong {
       canvas.height = s * 5;
       canvas.width = s * 3;
       const context = canvas.getContext("2d");
-      context.fillStyle = "red";
+      context.fillStyle = "white";
       str.split("").forEach((fill, i) => {
         if (fill === "1") {
           context.fillRect((i % 3) * s, ((i / 3) | 0) * s, s, s);
@@ -108,7 +108,7 @@ class Pong {
     this.reset();
   }
   clear() {
-    this._context.fillStyle = "blue";
+    this._context.fillStyle = "black";
     this._context.fillRect(0, 0, this._canvas.width, this._canvas.height);
   }
   collide(player, ball) {
