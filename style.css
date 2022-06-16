@@ -1,6 +1,6 @@
-/* body {
+body {
   align-items: center;
-  background: #202020;
+  background-image: url ("./assets/images/background-game.png");
   display: flex;
   margin: 0;
 }
@@ -8,6 +8,6 @@ canvas {
   border: solid 1px #fff;
   border-left: none;
   border-right: none;
-  image-rendering: pixelated;
+  image-rendering: optimizeSpeed;
   width: 100%;
-} */
+}
